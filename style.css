@@ -180,6 +180,15 @@ footer{
   color: #CCC;
 }
 
+.googleforms{
+  margin-top: 2em;
+  margin-left: 3em;
+}
+
+.reg-title{
+  text-transform: uppercase;
+}
+
 @media (max-width: 375px) {
 
 }
