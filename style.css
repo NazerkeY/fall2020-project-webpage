@@ -1,187 +1,124 @@
+html, body{
+  margin: 0 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 body{
-    width: 100%;
-    height: 100%;
+  height: 100%;
 }
 
-.top-inf-bar{
-    background: #28292b;
-    width: 100%;
-    height: 35px;
-    position: sticky;
-    top: 0;
+.top-homepage{
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
-.social{
-    padding-left: 450px;
+.top-line{
+  background: #28292B;
+  width: 100%;
+  height: 45px;
 }
 
-.contact{
-    display: inline-block;
-    text-align: right;
-    color: #fff;
-    line-height: 35px;
-    font-size: 12px;
-    color: white;
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  background-color: #FFF;
+  width: 100%;
+  height: 13%;
+
 }
 
-.navbar{
-    /* background-color: #fff;
-    border: 1px solid black; */
-    width: 100%;
-    /* top: 35px; */
-}
-
-.navbar-fixed{
-    position: fixed;
-    background-color: #fff;
-    background: white;
-    width: 100%;
-    margin-left: -20px;
-    top:36px;
-    height: 71px;
+.logo-container{
+  margin-top: -2%;
+  width: 30%;
 }
 
 .logo{
-    position: absolute;
-    top: -25px;
-    left: 18%;  
+  margin-left: 5em;
+  width: 40%;
 }
 
-.navbar ul{
-    list-style-type:none;
-    position: relative;
-    display: flex;
-    background: white;
-    left: 42%;
-    height: 33px;
+.navbar{
+  list-style-type:none;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
 }
 
-.navbar ul li{
-    padding: 10px 0px 0px 20px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 13px;
-    line-height: 1.42857143;
-    color: #333;
-    background: white;
-    font-weight: bold;
-    margin-top: 1.2%;
+.navbar li{
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
-.navbar ul li a{
-    color:#333;
+.navbar li a{
+  color:#333;
+  text-decoration:none;
 }
 
-.navbar ul li a:hover{
-    text-decoration:none;
-    cursor: pointer;
-    color: #333;
+.navbar li a:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.main-img{
-    /* max-width: initial; */
-    margin-top:3%;
+.main-container{
+  margin-top: 10em;
+  margin-left: 3em;
 }
 
-.gallery{
-    margin-left: 17%;
+.tour-title{
+  font-weight: bold;
+  margin-bottom: 2em;
 }
 
-.list{
-    position: absolute;
-    height: 200px;
-    display: inline-block;
+.tour-text{
+  width: 80%;
+  font-size: 1.3rem;
+  font-family: "Source Sans Pro";
 }
 
-.list ul{
-    margin-left: -13px;
-    margin-top: 9%;
-    list-style: none;
+footer{
+  height: 12em;
+  background-color: #333336;
 }
 
-.list ul li{
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #333;
-    margin-bottom: 0.2px;
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
 }
 
-.list ul li::before {
-    content: "\2022";
-    color: rgb(255, 197, 6);
-    font-weight: bold;
-    font-size: 22px;
-    display: inline-block; 
-    width: 15px;
-    margin-left: -1em;
-  }
-
-.list ul li::after{
-    margin-top: -550px;
+.contacts{
+  color: #FFF;
 }
 
-.list-btn{
-    position: absolute;
-    top: 80%;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    text-align: center;
-    border: 1px solid #FF5A5F;
-    background-color: #FF5A5F;
-    color: white;
-    padding: 3px 20px 3px 20px;
-    margin-left: 7px;
+.media{
+  font-size: 3rem;
 }
 
-.list-btn:hover{
-    color:white;
-    text-decoration: none;
+.fa{
+  margin: 0.5em 0.5em;
+  color: #FFF;
 }
 
-.autumn-img{
-    width: 100%;
-    height: 200px;
+.fa-facebook{
+  padding: 0.2em 0.4em;
+  border-style: solid;
+  background: #FFF;
+  color: #333336;
+  border-radius: 30%;
 }
 
-.autumn ul{
-    top: -160px;
-    position: relative;
-    list-style-type:none;
+.fa:hover{
+  color: #CCC;
 }
 
-.autumn-header{
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    color:white;
-    /* color: #fff; */
+@media (max-width: 375px) {
+
 }
 
-.autumn-paragraph{
-    font-size: 16px;
-    padding-top: 17px;
-    text-align: center;
-    color: white;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
+@media screen and (max-width: 768px) {
 
-.autumn-btn{
-    text-align: center;
-    margin-top: 24px;
-    display: block;
-    width: 9%;
-    font-size: 14px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #FF5A5F;
-    padding: 3px 20px 3px 20px;
-    margin-left: 45%;
-}
-
-.autumn a{
-    color:white;
-}
-
-.autumn a:hover{
-    color:white;
-    text-decoration: none;
 }
