@@ -16,6 +16,7 @@ body{
 .top-inf-bar{
   background: #28292b;
   width: 100%;
+  display: block;
 }
 
 .contact{
@@ -29,6 +30,10 @@ body{
 
 .social{
   padding-left: 23em;
+}
+
+.hamburger{
+  visibility: hidden;
 }
 
 
@@ -314,6 +319,83 @@ footer{
 .reg-title{
   text-transform: uppercase;
   margin-left:2em;
+}
+
+
+@media (max-width: 500px){
+  *{
+    overflow-x: hidden;
+  }
+
+  .top-inf-bar{
+    width: 570px;
+    height: 40px;
+    position: fixed;
+  }
+
+  .social{
+    display:none;
+  }
+
+  .contact{
+    display: none;
+  }
+
+  .logo{
+    top: 13px;
+  }
+  .hamburger{
+    visibility: visible;
+    position: relative;
+    top:220px;
+  }
+
+  .navbar{
+    width: 550px;
+    height: 110px;
+  }
+
+  .logo{
+    margin-left:20px;
+  }
+
+  .navbar ul{
+    display: none;
+  }
+
+  .tour-title{
+  margin-top: 4em;
+  margin-bottom: 1em;
+  }
+
+  .main-container{
+  margin-top:2em;
+  margin-right:-5em;
+  margin-left: 1em;
+  }
+
+  .line-break{
+    margin-left:1em;
+    width:450px;
+  }
+
+  #slider{
+    margin-left: 0em;
+  }
+  .googleforms{
+    margin-left: -1em;
+  }
+
+  .container{
+    display: block;
+    margin-left: 1em;
+  }
+  .media{
+    display: inline;
+    top: 10em;
+  }
+}
+/* 
 @media (max-width: 540px) {
 
   .logo-container{
@@ -376,11 +458,11 @@ footer{
 
 @media (max-width: 414px) {
 
-  .logo-container{
+  .logo{
     width: 35%;
   }
 
-  .main-container{
+  .top-homepag{
     margin-left: 2em;
   }
 
@@ -488,5 +570,4 @@ footer{
   .media{
     font-size: 1.8rem;
   }
-}
-}
+} */
